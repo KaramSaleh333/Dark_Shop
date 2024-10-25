@@ -1,0 +1,559 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "Open Sans", arial;
+    scroll-behavior:smooth;
+
+}
+nav{
+    width: 100%;
+    background-color: rgb(32, 31, 31);
+    color: white;
+    display: flex;
+    position: fixed;
+    left: 0;
+    justify-content: space-around;
+    padding: 10px;
+    z-index: 2;
+}
+nav img{
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+}
+nav ul{
+    width: 30%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    padding-top: 20px;
+}
+.header{
+    color: white;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://www.engage.veented.com/shop-dark/wp-content/uploads/sites/42/2017/08/full-4.jpg);
+    background-size: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.desc{
+    font-weight: 100;
+    font-size: 27px;
+    width: 400px;
+    padding-left: 150px;
+}
+.desc .link{
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    font-size: 16px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 520px;
+    left: 160px;
+    border-radius: 6%;
+    transition-duration: .5s;
+}
+
+.link:hover{
+    background-color: rgba(255, 255, 255, 0.753);
+}
+.scroll{
+    font-size: 25px;
+    width: 50px;
+    height: 80px;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    right: 0;
+    top: 130px;
+    z-index: 1;
+}
+.inim{
+    width: 30px;
+    height: 50px;
+    background-color: transparent;
+    border: solid white 1px;
+    border-radius: 40%;
+    position: absolute;
+    top: 600px;
+    right: 51%; ;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 40px;
+    animation-name: dot;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dot{
+    0%{
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+section{
+    width: 100%;
+    color: white;
+}
+.first{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+}
+.parag1{
+    width: 35%;
+    height: 50%;
+    padding-left: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+.price1{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.first img{
+    width: 50%;
+    height: 100%;
+}
+.price1-child{
+    margin-right: 10px;
+    width: 200px;
+    height: 250px;
+    margin-top: 30px;
+    background-color: rgb(22, 22, 22);
+}
+
+.Details1{
+    text-align: center;
+    width: 200px;
+    opacity: 0;
+    position: relative;
+    bottom: 70px;
+    right: 15px;
+    background-color: rgb(22, 22, 22);
+    transition: transform .9s;
+    /* transition: opacity .1s .1s; */
+}
+.cart1{
+    opacity: 0;
+    position: relative;
+    left: 70px;
+    bottom: 65px;
+    transition: transform .9s;
+}
+.price1-child:hover .Details1{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.price1-child:hover .cart1{
+    opacity: .4;
+    transform: translateY(20px);
+}
+.Details1:hover{
+    background-color: rgb(13, 149, 228);
+}
+.cart1:hover{
+    color: rgba(255, 255, 255, 0.192);
+}
+.Details2{
+    text-align: center;
+    width: 200px;
+    opacity: 0;
+    position: relative;
+    bottom: 70px;
+    right: 15px;
+    background-color: rgb(22, 22, 22);
+    transition: transform .9s;
+    /* transition: opacity .1s .1s; */
+}
+.cart2{
+    opacity: 0;
+    position: relative;
+    left: 70px;
+    bottom: 65px;
+    transition: transform .9s;
+}
+.price1-child:hover .Details2{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.price1-child:hover .cart2{
+    opacity: .5;
+    transform: translateY(20px);
+}
+.Details2:hover{
+   background-color: rgb(13, 149, 228);
+}
+.cart2:hover{
+    color: rgba(255, 255, 255, 0.192);
+}
+.second{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+}
+.parag2{
+    width: 35%;
+    height: 50%;
+    padding-left: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+.price2{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.second img{
+    width: 50%;
+    height: 100%;
+}
+.price2-child{
+    margin-right: 10px;
+    width: 200px;
+    height: 250px;
+    margin-top: 30px;
+    background-color: rgb(22, 22, 22);
+}
+
+.Details3{
+    text-align: center;
+    width: 200px;
+    opacity: 0;
+    position: relative;
+    bottom: 70px;
+    right: 15px;
+    background-color: rgb(22, 22, 22);
+    transition: transform .9s;
+    /* transition: opacity .1s .1s; */
+}
+.cart3{
+    opacity: 0;
+    position: relative;
+    left: 70px;
+    bottom: 65px;
+    transition: transform .9s;
+}
+.price2-child:hover .Details3{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.price2-child:hover .cart3{
+    opacity: .4;
+    transform: translateY(20px);
+}
+.Details3:hover{
+    background-color: rgb(13, 149, 228);
+}
+.cart3:hover{
+    color: rgba(255, 255, 255, 0.192);
+}
+.Details4{
+    text-align: center;
+    width: 200px;
+    opacity: 0;
+    position: relative;
+    bottom: 70px;
+    right: 15px;
+    background-color: rgb(22, 22, 22);
+    transition: transform .9s;
+    /* transition: opacity .1s .1s; */
+}
+.cart4{
+    opacity: 0;
+    position: relative;
+    left: 70px;
+    bottom: 65px;
+    transition: transform .9s;
+}
+.price2-child:hover .Details4{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.price2-child:hover .cart4{
+    opacity: .5;
+    transform: translateY(20px);
+}
+.Details4:hover{
+   background-color: rgb(13, 149, 228);
+}
+.cart4:hover{
+    color: rgba(255, 255, 255, 0.192);
+}
+.third{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    flex-flow: column nowrap;
+}
+.parag3{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.parag3 p{
+    width: 520px;
+    opacity: .5;
+    margin: 30px;
+}
+.price3{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.fourth{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.parag4{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+}
+.parag4 p{
+    width: 520px;
+    opacity: .5;
+    margin: 30px;
+}
+.rows{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+}
+
+.rows div{
+    width: 30%;
+    height: 50%;
+}
+.rows p{
+    opacity: .5;
+    margin-top: 15px;
+}
+.fifth{
+    width: 100%;
+    height: 400px;
+    background-image: url(https://www.engage.veented.com/shop-dark/wp-content/uploads/sites/42/2017/08/full-2.jpg?id=1141);
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(50%);
+}
+.fifth-content{
+    position:absolute;
+    color: white;
+    right: 38%;
+    top: 3610px;  /*انتهت حلول الارض*/
+}
+.button{
+    text-align: center;
+    width: 120px;
+    height: 60px;
+    border: solid white 2px;
+    margin-top: 20px;
+    margin-left: 120px;
+    border-radius: 4%;
+    transition-duration: .5s;
+}
+.button:hover{
+    background-color: white;
+}
+
+.button:hover p{
+    color: black;
+}
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+}
+.first-footer{
+    width: 100%;
+    height: 88%;
+    background-color: rgb(32, 31, 31);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.timing p{
+    margin-top: 12px;
+    opacity: .5;
+}
+.products{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.products div{
+    width: 250px;
+    height: 75px;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: transparent;
+    justify-content: space-around;
+}
+.products div p{
+    width: 200px;
+    height: 30%;
+    opacity: .7;
+}
+.products div img{
+    width: 75px;
+    height: 100%;
+}
+.contact{
+    width: 350px;
+    margin-top:40px;
+}
+.contact p{
+    opacity: .5;
+}
+.contact p{
+    margin-top: 20px;
+}
+.second-footer{
+    width: 100%;
+    height: 12%;
+    background-color: rgb(24, 23, 23);
+    position: relative;
+}
+.second-footer p{
+    position: absolute;
+    left: 50px;
+    top: 20px ;
+}
+.second-footer div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block ;
+    position: absolute;
+    top: 20px;
+}
+.face:hover{
+    background-color: rgb(74, 74, 238);
+}
+.google:hover{
+    background-color: rgb(212, 78, 78);
+}
+.in:hover{
+    background-color: rgb(21, 131, 221);
+}
+.twi:hover{
+    background-color: rgb(21, 131, 221);
+}
+.top{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.253);
+    border: rgba(255, 255, 255, 0.507) solid 3px;
+    border-radius: 50%;
+    position: fixed;
+    opacity: 0;
+    top: 550px;
+    right: 10px;
+    z-index: 2;
+    transition: .5s;
+}
+
+section:hover .top{
+    opacity: 1;
+}
+footer:hover .top{
+    opacity: 1;
+}
+.top:hover{
+    border: white solid 3px;
+}
+.i{
+    position: absolute;
+    left: 14px;
+    top: 11px;
+    color: rgba(255, 255, 255, 0.507);
+}
+.top:hover i{
+    color: white;
+}
+.hom{
+    width: 200px;
+    height: 120px;
+    background-color: rgb(32, 31, 31);
+    position: absolute;
+    top: 70px;
+    right: 350px;
+    z-index: 2;
+    padding-top: 10px;
+    opacity: 0;
+    transition-duration: .5s;
+}
+.home:hover ~ .hom{
+    opacity: 1;
+}
+.sho{
+    width: 200px;
+    height: 120px;
+    background-color: rgb(32, 31, 31);
+    position: absolute;
+    top: 70px;
+    right: 290px;
+    z-index: 2;
+    padding-top: 10px;
+    opacity: 0;
+    transition-duration: .5s;
+}
+.shop:hover ~ .sho{
+    opacity: 1;
+}
